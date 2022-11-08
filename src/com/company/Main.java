@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-            pattern16(5);
+            pattern21(5);
 
         }
         static void pattern8(int n){
@@ -130,8 +130,72 @@ public class Main {
             }
 
         }
+        static void pattern17(int n){
+            for (int i = 1; i <=n ; i++) {
+                char a='A';
+                for (int j = 1; j <=i ; j++){
+                    System.out.print(a);
+                    a++;
+
+                }
+                System.out.println();
+            }
+        }
+        static void pattern18(int n){
+            for (int i = 5; i>=1 ; i--) {
+                char a='A';
+                for (int j = 1; j <=i ; j++) {
+                    System.out.print(a);
+                    a++;
+                }
+
+                System.out.println(" ");
+                
+            }
+        }
+        static void pattern19(int n){
+        char a='A';
+            for (int i = 1; i <=n ; i++) {
+                for (int j = 1; j <=i ; j++) {
+                    System.out.print(a);
+                }
+                System.out.println(" ");
+                a++;
+            }
+        }
+        static void pattern20(int n){
+
+            for (int i = 1; i <=5 ; i++) {
+                char a='A';
+                for (int j = 1; j <=n-i ; j++) {
+                    System.out.print(" ");
+                }
+
+                for (int k = 1; k <i ; k++){
+
+                    System.out.print(a);
+                    a++;
+                }
+
+                for(int l = i-1; l>= 0; l--){
+                    System.out.print((char)('A'+l));
+                }
+
+                System.out.println(" ");
+            }
+
+       }
+       static void pattern21(int n){
+           for (int i =1; i <=n ; i++) {
+               for (int j=i-1; j>=0 ; j--) {
+                   System.out.print((char)('E'-j));
 
 
+               }
+               System.out.println(" ");
+
+           }
+       }
 
 
 
